@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Vicus</string>
+    <string name="index_0">城市漫步</string>
+    <string name="index_1">在售房产</string>
+    <string name="login">登录</string>
+    <string name="new_york">纽约</string>
+    <string name="san_francisco">旧金山</string>
+    <string name="tip_chose_city">请选择您想了解的城市</string>
+</resources>

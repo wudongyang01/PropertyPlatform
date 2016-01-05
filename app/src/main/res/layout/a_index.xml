@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_title">
+
+    <Button
+        android:id="@+id/ai_btn_info"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="i" />
+
+
+    <Button
+        android:id="@+id/ai_btn_0"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/index_0" />
+
+    <Button
+        android:id="@+id/ai_btn_1"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_below="@+id/ai_btn_0"
+        android:layout_marginTop="30dip"
+        android:layout_centerHorizontal="true"
+        android:text="@string/index_1" />
+
+
+</RelativeLayout>

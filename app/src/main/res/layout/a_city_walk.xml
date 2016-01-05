@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.dadao.d5.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_chose_city"
+        android:gravity="center"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginTop="50dip"
+        />
+
+    <Button
+        android:id="@+id/ai_btn_ny"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/new_york" />
+
+    <Button
+        android:id="@+id/ai_btn_sf"
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="100dip"
+        android:text="@string/san_francisco" />
+
+
+</RelativeLayout>

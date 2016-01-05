@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.dadao.d5.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="74dip"
+        android:layout_height="74dip"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/ic_launcher"
+        android:visibility="gone"></ImageView>
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="38dip"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@mipmap/ic_id"
+        android:drawablePadding="10dip"
+        android:ems="10"
+        android:hint=" 用 户 名"
+        android:paddingLeft="10dip"
+        android:paddingRight="50dip"
+        android:textColor="@color/white"
+        android:textColorHint="#c1c1c1"
+        android:textSize="14sp"></EditText>
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="200dip"
+        android:layout_height="38dip"
+        android:layout_below="@+id/edt_id"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@mipmap/ic_pw"
+        android:drawablePadding="10dip"
+        android:ems="10"
+        android:hint=" 密 码"
+        android:inputType="textPassword"
+        android:paddingLeft="10dip"
+        android:paddingRight="50dip"
+        android:textColor="@color/white"
+        android:textColorHint="#c1c1c1"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/al_btn_check"
+        android:layout_width="60dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edt_pw"
+        android:layout_marginRight="30dip"
+        android:layout_toRightOf="@+id/edt_pw"
+        android:text="60s"
+
+        />
+
+    <Button
+        android:id="@+id/al_btn_login"
+        style="@style/T.s12.cw"
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:layout_below="@+id/edt_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_btn_green_xml"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

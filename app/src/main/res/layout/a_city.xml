@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <com.dadao.d5.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+
+    <LinearLayout
+        android:id="@+id/ac_ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/title_bar">
+
+        <Button
+            android:id="@+id/ac_btn_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="城市简介" />
+
+        <Button
+            android:id="@+id/ac_btn_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="区域介绍" />
+    </LinearLayout>
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ac_convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ac_ll_menu"
+        app:canLoop="true" />
+
+</RelativeLayout>
